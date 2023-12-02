@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/3f52c11cab.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>Sourav's portfolio</title>
+    <link rel="icon" type="image/x-icon" href="images/boy2.jpg">
+
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img class="logo" src="images/logo.jpg" alt="">
+                <ul id="sidemenu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skill">Skills</a></li>
+                    <li><a href="#project">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-circle-xmark cross" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars bar" onclick="openmenu()"></i> 
+            </nav>
+            <div class="detel">
+                <h1>Hi, I'm <span>SOURAV</span></h1>
+                <div class="wapper">
+                    <div class="fixed-txt">I'm a</div>
+                    <ul class="moving-text">
+                        <li><span>Web Developer...</span></li>
+                        <li><span>Python Developer...</span></li>
+                    </ul> 
+                </div>      
+            </div>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img class="about-img" src="images/boy1.jpg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p class="about-me">
+                       <span class="about-intro1">Hello, I'm Sourav Mallick, and I'm on an exciting journey to become a Python Full Stack Developer.</span>
+                    <br>As an enthusiastic learner, I've been immersing myself in the world of web development. I've taken the first steps by mastering the foundations of front-end technologies like HTML and CSS, enabling me to craft visually appealing and responsive web pages.
+                    <br><span class="about-intro2">
+                        My love for Python led me to explore its vast capabilities. I've dived deep into the language and acquired a strong grasp of its features and best practices.
+                    Currently, I'm expanding my knowledge and skills by delving into Django, a high-level Python web framework. With Django, I'm discovering the art of building robust and dynamic web applications, and I'm excited to bring my projects to life with its capabilities.
+                    </span>
+                    <br>
+                    My portfolio is a testament to my journey. It showcases the projects I've worked on, highlighting my abilities in both front-end and back-end development. Each project is a reflection of my dedication to creating seamless user experiences and solving real-world problems through technology.
+                    <br><span class="about-intro3">Thank you for visiting my portfolio, and I hope you enjoy the projects as much as I've enjoyed creating them.</span>
+                    </p>
+                    <div class="tab-titels">
+                        <p class="tab-links active-link" onclick="opentab('college')">College</p>
+                        <p class="tab-links" onclick="opentab('Twstandard')">12th Standard</p>
+                        <p class="tab-links" onclick="opentab('Testandard')">10th Standard</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="college">
+                        <ul>
+                            <li><span>Domain</span><br>B.Tech in Electrical Engineering</li>
+                            <li><span>Time-Period</span><br>2019-2023 from MSIT,Kolkata</li>
+                            <li><span>CGPA</span><br>8.90</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Twstandard">
+                        <ul>
+                            <li><span>Domain</span><br>Science</li>
+                            <li><span>Time-Period</span><br>2018-2019 from RDHS, Ranichak</li>
+                            <li><span>Percentage</span><br>71.2%</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Testandard">
+                        <ul>
+                            <li><span>Domain</span><br>10th Standard</li>
+                            <li><span>Time-Period</span><br>2016-2017 from RDHS, Ranichak</li>
+                            <li><span>Percentage</span><br>63.4%</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+
+
+        <!-- Skill Section -->
+        </div>
+        <div id="skill">
+            <div class="container-skill">
+                <div class="grid text-center">
+                    <h3 class="skill-title">SKILLS</h3>
+                    <div class="g-col-6 flex col-sm-2.5 glow">
+                        <div class="card" style="width: 18rem;">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSZMzmzDCs24zTBZ7B_HUfWkX5ZhdEKj2WRQ&usqp=CAU" class="card-img-top" alt="skill- python">
+                            <div class="card-body">
+                              <h5 class="card-title"><b>Python</b></h5>
+                              <p class="card-text">I am sloving verious problems in Leetcode and also other sites.Click the below button to see my github repo.</p>
+                              <a href="https://github.com/Sourav356/LeetCode_solutions" target="_blank" class="btn btn-primary">Come to my Github</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="g-col-6 flex col-sm-2.5 glow">
+                        <div class="card" style="width: 18rem;">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1_qyCU1shy3IgwGS0HbmiKnth6ZeE1KDAag&usqp=CAU" class="card-img-top" alt="skill- HTML & CSS">
+                            <div class="card-body">
+                              <h5 class="card-title"><b>HTML & CSS</b></h5>
+                              <p class="card-text">Click to the below button for see my web applications using HTML & CSS .</p>
+                              <a href="https://github.com/Sourav356" target="_blank" class="btn btn-primary">Come with me</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="g-col-6 flex col-sm-2.5 glow">
+                        <div class="card" style="width: 18rem;">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQW8Dn4tFMDS52fpHhvVE00XSVIU0-yDnWH3Q&usqp=CAU" class="card-img-top" alt="skill- python">
+                            <div class="card-body">
+                              <h5 class="card-title"><b>Bootstrap</b></h5>
+                              <p class="card-text">Using Bootstrap I am boosting my CSS skills and make my websites more efficient.</p>
+                              <a href="https://github.com/Sourav356" target="_blank" class="btn btn-primary">Let's Go</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="g-col-6 flex col-sm-2.5 glow">
+                        <div class="card" style="width: 18rem;">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhtVKoUDxvl1BLULwCVm7OF1BbEoYvcTkK1Q&usqp=CAU" class="card-img-top python" alt="skill- python">
+                            <div class="card-body">
+                              <h5 class="card-title"><b>Oracle SQL</b></h5>
+                              <p class="card-text">I am also know the Oracle SQl and continuously sloving the problems in Leetcode.</p>
+                              <a href="https://github.com/Sourav356/LeetCode_solutions" target="_blank" class="btn btn-primary">Click Me</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="g-col-6 flex col-sm-2.5 glow">
+                        <div class="card" style="width: 18rem;">
+                            <img src="data:image/jpeg;base64,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" class="card-img-top aws" alt="skill- AWS">
+                            <div class="card-body">
+                              <h5 class="card-title"><b>Amazon Web Service</b></h5>
+                              <p class="card-text">Using AWS EC2 instence I am hosting my Django Website, you can check my website in the project section.</p>
+                              <a href="https://github.com/Sourav356/TextUtils.in.github.io" target="_blank" class="btn btn-primary">Come with me</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="g-col-6 flex col-sm-2.5 glow">
+                        <div class="card" style="width: 18rem;">
+                            <img src="https://arduinogetstarted.com/images/cover/arduino-iot-internet-of-thing.jpg" class="card-img-top aws" alt="skill- Arduino">
+                            <div class="card-body">
+                              <h5 class="card-title"><b>Arduino + IoT</b></h5>
+                              <p class="card-text">I have done some project in IoT. The most popular project is Hands Free Automated Door and Bell System.</p>
+                              <a href="images/11925-2022-CO-SW-ForwardingLetter-09-11-2022.pdf" target="_blank" class="btn btn-primary">See the LOR from Govt. of India</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Project Section -->
+        <div id="project">
+            <div class="container-project">
+                <h3 class="project-head">My Work/Projects</h3>
+                <div class="a-tag flex">
+                    <div class="g-col-6  col-sm-2.5 ">
+                        <div class="card">
+                            <img class="card-img"  src="images/Text_utils.jpg" alt="Text-Utils.in" >
+                        </div>
+                        <a href="http://3.26.130.170/" target="_blank">
+                            <div class="overlay">
+                                <div class="container-descrip">
+                                    <h4><b>Text Utils.in</b></h4>
+                                    <p>A tool for analyzing text data using Django.<br> 
+                                    Also use HTML, CSS, and Bootstrap <br> for styling.
+                                          Also hosted in AWS,for server <br> side I use nginx
+                                          and gunicorn.<br><mark class="mark">Click to see the website</mark>
+                                    </p>
+                                </div>
+                        
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="a-tag flex">
+                    <div class="g-col-6 col-sm-2.5 ">
+                        <div class="card">
+                            <img class="card-img" src="images/Go_any_where.jpg" alt="Go Any Where" >
+                            <a href="https://sourav356.github.io/Go-Any-Where.github.io/" target="_blank">
+                                <div class="overlay">
+                                    <div class="container-descrip">
+                                        <h4><b>Go-Any-Where</b></h4>
+                                        <p>It is an HTML & CSS-based Application,<br>
+                                             by using it users can access his/ her social<br> 
+                                              media accounts like GitHub,LinkedIn,<br>  Facebook,
+                                               StackOverflow, etc.<br>  It is hosted in Github.<br>
+                                               <mark class="mark">Click to see the website</mark>
+                                        </p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="a-tag flex">
+                    <div class="g-col-6  col-sm-2.5 ">
+                        <div class="card">
+                            <img class="card-img"  src="images/Travel.jpg" alt="Travel Dairy" >
+                            <a href="https://sourav356.github.io/Travel-project.github.io/index.html" target="_blank">
+                                <div class="overlay">
+                                    <div class="container-descrip">
+                                        <h4><b>Travel Dairy</b></h4>
+                                        <p>It is an HTML and CSS-based travel<br>
+                                             dairy application.It is showcasing<br>
+                                              some of the best places to visit all<br>
+                                               over the world. You can check out it<br>
+                                                through my GitHub account. OR<br>
+                                              <mark class="mark">Click here to see the website</mark>
+                                            </p>
+                                    </div>
+                            
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+
+                
+                <div class="a-tag flex">
+                    <div class="g-col-6  col-sm-2.5 ">
+                        <div class="card">
+                            <video class="card-img"  src="images/project_video.mp4" autoplay muted></video>
+                            <a href="images/11925-2022-CO-SW-CopyRightCertificateApplicantCopy-09-11-2022.pdf" target="_blank">  
+                                <div class="overlay">
+                                    <div class="container-descrip">
+                                        <h4><b><mark>Hands Free</mark><br>automated Door System</b></h4>
+                                        <p>It's an automated door and bell system.<br>
+                                               For the project code I also get the<br>
+                                                Copyright Certificate from the <br>Govt. of India<br>
+                                              <mark class="mark">Click here to see the Certificate</mark>
+                                        </p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="a-tag flex">
+                    <div class="g-col-6  col-sm-2.5 ">
+                        <div class="card">
+                            <img class="card-img"  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjiVHS7jyK27eDQcTTyJKXzVX13CFQlZdcnA&usqp=CAU" alt="">
+                            <a href="#" target="_blank">  
+                                <div class="overlay">
+                                    <div class="container-descrip">
+                                        <h4><b>Project Name</b></h4>
+                                        <p>
+                                            New Project Will be added here as<br> soon as I completed the projects.<br>
+                                            Wait for my next projects please.
+                                        </p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="a-tag flex">
+                    <div class="g-col-6  col-sm-2.5 ">
+                        <div class="card">
+                            <img class="card-img"  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThL3TbHMGyeNAEyott-mkuvLW0JDwr0bwLww&usqp=CAU" alt="">
+                            <a href="#" target="_blank">  
+                                <div class="overlay">
+                                    <div class="container-descrip">
+                                        <h4><b>Project Name</b></h4>
+                                        <p>
+                                            New Project Will be added here as<br> soon as I completed the projects.<br>
+                                            Wait for my next projects please.
+                                        </p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- contact -->
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title">Contact me</h1>
+                        <p><i class="fa-solid fa-paper-plane"></i>souravplacement01@gmail.com</p>
+                        <p><i class="fa-solid fa-square-phone"></i>9547259198</p>
+                        <div class="social-icons">
+                            <a href="https://www.facebook.com/profile.php?id=100022326970621" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="https://www.linkedin.com/in/sourav-mallick-3a9774210/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="https://github.com/Sourav356" target="_blank"><i class="fa-brands fa-github"></i></a>
+                            <a href="https://www.instagram.com/souravmallick342/" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
+                        </div>
+                        <a href="images/Sourav Mallick's Resume.pdf" download class="btn btn2">Download CV</a>
+                    </div>
+                    <div class="contact-right">
+                        <form name="submit-to-google-sheet">
+                            <input type="text" name="Name" placeholder="Your Name" required>
+                            <input type="email" name="Email" placeholder="Your Email" required>
+                            <textarea name="Message" rows="6" placeholder="Write Your Message here"></textarea>
+                            <button type="submit" class="btn btn2">Submit</button>
+                        </form>
+                        <span id="msg"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright &#169 Sourav. Learning is the biggest earning <i class="fa-solid fa-laptop-file"></i>.</p>
+    </div>
+    <script>
+        var tablinks =document.getElementsByClassName("tab-links");
+        var tabcontents =document.getElementsByClassName("tab-contents");
+    
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+    
+        }
+    
+    </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+        
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxnzdtOqMMKJQ-3Yrkz4O2HcfQDsRx_W8KIx_ExJzyKKTv3eBZiA5p4JTh8dFERZv3dow/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML ="Message sent sucessfully."
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+    
+    
+</body>
+</html>
